@@ -6,11 +6,12 @@ import (
 )
 
 func main() {
-	fmt.Println("first print wandi")
-	// testPrint := firstUtil()
-	// fmt.Println(testPrint)
+	num1, num2 := 8, 5
 
-	checkAddition := calculation.Add(8, 2)
+	fmt.Printf("Start Calculation of number %d and %d \n", num1, num2)
+	checkAddition := calculation.Add(num1, num2)
+	fmt.Printf("Addition result : %d \n", checkAddition)
 
-	fmt.Println(checkAddition)
+	checkMultiply := calculation.Multiply(num1, num2)
+	fmt.Printf("Multiply result : %d \n", checkMultiply)
 }
